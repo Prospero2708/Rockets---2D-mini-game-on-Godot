@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Rockets by Doinikov Danil"
+config/description="Это игра, где нужно ловить ракеты и зарабатывать очки. Ракеты со временем начинают падать быстрее."
+config/version="1.0"
+run/main_scene="uid://d0g32c8m4y0ib"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/show_image=false
+config/icon="uid://d0wfbre057u7w"
+
+[display]
+
+window/size/viewport_width=700
+window/size/viewport_height=800
+window/stretch/mode="viewport"
+mouse_cursor/custom_image="uid://d0wfbre057u7w"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0g32c8m4y0ib"]
+
+[ext_resource type="Texture2D" uid="uid://tdf2hlot7win" path="res://assets/start_1.aseprite" id="1_rnjyy"]
+[ext_resource type="Texture2D" uid="uid://b8uq5ybmutmei" path="res://assets/start_2.aseprite" id="2_4vge2"]
+[ext_resource type="Texture2D" uid="uid://c8dtbg00wltnn" path="res://assets/MENU_R.aseprite" id="3_04qyp"]
+[ext_resource type="Script" uid="uid://cpd76dkkev8yj" path="res://scripts/perehod.gd" id="3_4vge2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("1_rnjyy")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("2_4vge2")
+
+[node name="MENU" type="Node2D"]
+script = ExtResource("3_4vge2")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+top_level = true
+anchors_preset = -1
+anchor_left = -0.024285715
+anchor_top = -0.03125
+anchor_right = 0.087142855
+offset_left = 392.0
+offset_top = 580.0
+offset_right = 622.0
+offset_bottom = 634.0
+texture_normal = SubResource("AtlasTexture_0hol4")
+texture_hover = SubResource("AtlasTexture_q6r6c")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="MenuR" type="Sprite2D" parent="."]
+position = Vector2(351, 407.49997)
+scale = Vector2(10.90625, 12.578124)
+texture = ExtResource("3_04qyp")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
