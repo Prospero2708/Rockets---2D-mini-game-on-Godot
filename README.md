@@ -15,7 +15,7 @@ A complete, lightweight 2D arcade clicker game developed independently from scra
 * **Language:** GDScript
 * **Graphics:** Custom Retro Pixel Art / 2D Assets
 
-📺 **[Watch the Demo on YouTube]https://youtu.be/KhCXC33f-Yc**
+📺 **[Watch the Demo on YouTube] --- https://youtu.be/KhCXC33f-Yc**
 
 ## 📸 In-Game Screenshots
 
